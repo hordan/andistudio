@@ -16,7 +16,7 @@ gulp.task('sass',  function() {
 });
 
 gulp.task('js', function() {
-    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/tether/dist/js/tether.min.js'])
+    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/tether/dist/js/tether.min.js', 'node_modules/popper.js/dist/popper.min.js'])
         .pipe(gulp.dest("src/js"))
         .pipe(browserSync.stream())
         .pipe(browserSync.reload({
@@ -36,7 +36,7 @@ gulp.task('serve', function() {
       server: "./src"
   });
   gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'],  gulp.series('sass')); 
-  gulp.watch(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/tether/dist/js/tether.min.js'],  gulp.series('js')); 
+  gulp.watch(['node_modules/bootstrap/dist/js/bootstrap.min.js', 'node_modules/jquery/dist/jquery.min.js', 'node_modules/tether/dist/js/tether.min.js' , 'node_modules/popper.js/dist/popper.min.js'],  gulp.series('js')); 
   gulp.watch('../src/img/**/*',  gulp.series('inline-images')); 
 
   gulp.watch("src/*.html").on('change', browserSync.reload);

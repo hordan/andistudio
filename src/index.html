@@ -9,109 +9,221 @@
         <link rel="stylesheet" href="/css/bootstrap.css">
         <link rel="stylesheet" href="/css/style.css">
     </head>
-    <body>
-        <header id="top" class="header">
-                <div class="text-vertical-center">
-                        <h1>SAP Sample Studio</h1>
-                        <h3>Add Temple Themes &amp; Templates</h3>
-                        <br>
-                        <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
-                </div>
-        </header>
-        <section id="about" class="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            <h2>Lorem ipsum dolor sit amet</h2>
-                            <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo</p>
-                        </div>
+    <body>      
+            <header id="top" class="header">
+                    <div class="text-vertical-center">
+                            <h1>SAP Sample Studio</h1>
+                            <h3>Add Temple Themes &amp; Templates</h3>
+                            <br>
+                            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
                     </div>
-                </div>
-        </section>
-        <section id="shop" class="shop">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="tab-content" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                            <div class="row">
-                                <div class="col-lg-2">
-                                    <div class="card">
-                                            <img src="https://dummyimage.com/200x50/000/fff" class="card-img-top" alt="Shop Item">
-                                            <h5 class="card-title">Shop Item</h5>
-                                            <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
-                                            <div class="card-footer">
-                                                    <small class="text-muted">Last updated 3 mins ago</small>
+            </header>
+        <section id="shop" class="shop" style="border: dashed">
+                <div class="container-fluid">
+                        <div class="row">
+                                <div class="col-lg-2 col-sm-6">
+                                <ul class="nav nav-pills" role="tablist" aria-orientation="vertical">
+                                        <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Fabrics</a>
+                                                <div class="dropdown-menu">
+                                                  <a class="nav-link dropdown-item" id="v-pills-fabrics-tab" data-toggle="pill"  href="#v-pills-fabrics" role="tab" aria-controls="v-pills-fabrics" aria-selected="false">Fabrics 1</a>
+                                                  <a class="dropdown-item" href="#">Fabrics 2</a>
+                                                  <a class="dropdown-item" href="#">Fabrics 3</a>
+                                                  <div class="dropdown-divider"></div>
+                                                  <a class="dropdown-item" href="#">Fabrics 4</a>
+                                                </div>
+                                              </li>
+                                        <li class="nav-item dropdown">
+                                          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Sewing</a>
+                                          <div class="dropdown-menu">
+                                            <a class="nav-link dropdown-item" id="v-pills-sewing-tab" data-toggle="pill" href="#v-pills-sewing" role="tab" aria-controls="v-pills-sewing" aria-selected="false"> Sewing 1</a>
+                                            <a class="dropdown-item" href="#">Sewing 2</a>
+                                            <a class="dropdown-item" href="#">Sewing 3</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Sewing 4</a>
+                                          </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Curtains</a>
+                                                <div class="dropdown-menu">
+                                                   <a class="nav-link dropdown-item" id="v-pills-curtains-tab" data-toggle="pill" href="#v-pills-curtains" role="tab" aria-controls="v-pills-curtains" aria-selected="false">Curtains 1</a>
+                                                  <a class="dropdown-item" href="#">Curtains 2</a>
+                                                  <a class="dropdown-item" href="#">Curtains 3</a>
+                                                  <div class="dropdown-divider"></div>
+                                                  <a class="dropdown-item" href="#">Curtains 4</a>
+                                                </div>
+                                              </li>
+                                              <li class="nav-item dropdown">
+                                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Something</a>
+                                                    <div class="dropdown-menu">
+                                                      <a class="dropdown-item" href="#">Something 1</a>
+                                                      <a class="dropdown-item" href="#">Something 2</a>
+                                                      <a class="dropdown-item" href="#">Something 3</a>
+                                                      <div class="dropdown-divider"></div>
+                                                      <a class="dropdown-item" href="#">Something 4</a>
+                                                    </div>
+                                                  </li>
+                                      </ul>
+                                </div>
+                                <div class="col-lg-10 col-sm-6">
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                                <div class="tab-pane fade" id="v-pills-fabrics" role="tabpanel" aria-labelledby="v-pills-fabrics-tab">
+                                                    <div class="row">
+                                                            <div class="card-deck">
+                                                                    <div class="card">
+                                                                      <img src="images/img1.jpg" class="card-img-top" alt="img">
+                                                                      <div class="card-body">
+                                                                        <h5 class="card-title">Название карточки</h5>
+                                                                        <p class="card-text">This is a nt is a little bit longer.</p>
+                                                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="card">
+                                                                      <img src="images/img2.jpg" class="card-img-top" alt="img">
+                                                                      <div class="card-body">
+                                                                        <h5 class="card-title">Название карточки</h5>
+                                                                        <p class="card-text">This card has supporting al content.</p>
+                                                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="card">
+                                                                      <img src="images/img3.jpg" class="card-img-top" alt="img">
+                                                                      <div class="card-body">
+                                                                        <h5 class="card-title">Название карточки</h5>
+                                                                        <p class="card-text">This is a wider card with r con equal height action.</p>
+                                                                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                                      </div>
+                                                                    </div>
+                                                                    <div class="card">
+                                                                            <img src="images/img1.jpg" class="card-img-top" alt="img">
+                                                                            <div class="card-body">
+                                                                              <h5 class="card-title">Название карточки</h5>
+                                                                              <p class="card-text">This is a nt is a little bit longer.</p>
+                                                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="card">
+                                                                            <img src="images/img2.jpg" class="card-img-top" alt="img">
+                                                                            <div class="card-body">
+                                                                              <h5 class="card-title">Название карточки</h5>
+                                                                              <p class="card-text">This card has supporting al content.</p>
+                                                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="card">
+                                                                            <img src="images/img3.jpg" class="card-img-top" alt="img">
+                                                                            <div class="card-body">
+                                                                              <h5 class="card-title">Название карточки</h5>
+                                                                              <p class="card-text">This is a wider card with r con equal height action.</p>
+                                                                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                                            </div>
+                                                                          </div>
+                                                                          <div class="card">
+                                                                                <img src="images/img1.jpg" class="card-img-top" alt="img">
+                                                                                <div class="card-body">
+                                                                                  <h5 class="card-title">Название карточки</h5>
+                                                                                  <p class="card-text">This is a nt is a little bit longer.</p>
+                                                                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                                                </div>
+                                                                              </div>
+                                                                              <div class="card">
+                                                                                <img src="images/img2.jpg" class="card-img-top" alt="img">
+                                                                                <div class="card-body">
+                                                                                  <h5 class="card-title">Название карточки</h5>
+                                                                                  <p class="card-text">This card has supporting al content.</p>
+                                                                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                                                </div>
+                                                                              </div>
+                                                                              <div class="card">
+                                                                                <img src="images/img3.jpg" class="card-img-top" alt="img">
+                                                                                <div class="card-body">
+                                                                                  <h5 class="card-title">Название карточки</h5>
+                                                                                  <p class="card-text">This is a wider card with r con equal height action.</p>
+                                                                                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                                                                </div>
+                                                                              </div>
+                                                                  </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane fade" id="v-pills-sewing" role="tabpanel" aria-labelledby="v-pills-sewing-tab"><div class="row"></div></div>
+                                                <div class="tab-pane fade" id="v-pills-curtains" role="tabpanel" aria-labelledby="v-pills-curtains-tab"><div class="row"></div></div>
                                             </div>
-                                    </div>
                                 </div>
-                                <div class="col-lg-2">
-                                        <div class="card">
-                                                <img src="https://dummyimage.com/200x50/000/fff" class="card-img-top" alt="Shop Item">
-                                                <h5 class="card-title">Shop Item</h5>
-                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
-                                                <div class="card-footer">
-                                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div class="col-lg-2">
-                                        <div class="card">
-                                                <img src="https://dummyimage.com/200x50/000/fff" class="card-img-top" alt="Shop Item">
-                                                <h5 class="card-title">Shop Item</h5>
-                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
-                                                <div class="card-footer">
-                                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div class="col-lg-2">
-                                        <div class="card">
-                                                <img src="https://dummyimage.com/200x50/000/fff" class="card-img-top" alt="Shop Item">
-                                                <h5 class="card-title">Shop Item</h5>
-                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
-                                                <div class="card-footer">
-                                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div class="col-lg-2">
-                                        <div class="card">
-                                                <img src="https://dummyimage.com/200x50/000/fff" class="card-img-top" alt="Shop Item">
-                                                <h5 class="card-title">Shop Item</h5>
-                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
-                                                <div class="card-footer">
-                                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                                </div>
-                                        </div>
-                                </div>
-                                <div class="col-lg-2">
-                                        <div class="card">
-                                                <img src="https://dummyimage.com/200x50/000/fff" class="card-img-top" alt="Shop Item">
-                                                <h5 class="card-title">Shop Item</h5>
-                                                <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et</p>
-                                                <div class="card-footer">
-                                                        <small class="text-muted">Last updated 3 mins ago</small>
-                                                </div>
-                                        </div>
-                                </div>
-                            </div>
                         </div>
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab"></div>
-                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab"> </div>
-                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab"></div>
-                    </div>
-                </div>           
-            </div>
+                </div>
         </section>
+        <div class="container">
+
+                <br>  <p class="text-center">More bootstrap 4 components on <a href="http://bootstrap-ecommerce.com/"> Bootstrap-ecommerce.com</a></p>
+                <hr>
+                
+                
+                
+                
+                <div class="row">
+                <div class="col-md-4">
+                    <figure class="card card-product">
+                        <div class="img-wrap"><img src="images/img1.jpg"></div>
+                        <figcaption class="info-wrap">
+                                <h4 class="title">Вискоза</h4>
+                                <div class="rating-wrap">
+                                    <div class="label-rating">Артикул:  5000</div>
+                                    <div class="label-rating">Производство: Китай</div>
+                                    <div class="label-rating">Состав: 100% хлопок</div>
+                                </div> <!-- rating-wrap.// -->
+                        </figcaption>
+                        <div class="bottom-wrap">
+                            <div class="price-wrap h5">
+                                <span class="price-new">128 р.</span> <span class="amount">за 1 м.п</span>
+                            </div> <!-- price-wrap.// -->
+                        </div> <!-- bottom-wrap.// -->
+                    </figure>
+                </div> <!-- col // -->
+                <div class="col-md-4">
+                    <figure class="card card-product">
+                        <div class="img-wrap"><img src="images/img1.jpg"> </div>
+                        <figcaption class="info-wrap">
+                                <h4 class="title">Good product</h4>
+                                <p class="desc">Some small description goes here</p>
+                                <div class="rating-wrap">
+                                    <div class="label-rating">132 reviews</div>
+                                    <div class="label-rating">154 orders </div>
+                                </div> <!-- rating-wrap.// -->
+                        </figcaption>
+                        <div class="bottom-wrap">
+                                <a href="" class="btn btn-sm btn-primary float-right">Order Now</a>	
+                                <div class="price-wrap h5">
+                                    <span class="price-new">$1280</span> <del class="price-old">$1980</del>
+                                </div> <!-- price-wrap.// -->
+                        </div> <!-- bottom-wrap.// -->
+                    </figure>
+                </div> <!-- col // -->
+                <div class="col-md-4">
+                    <figure class="card card-product">
+                        <div class="img-wrap"><img src="images/img1.jpg"></div>
+                        <figcaption class="info-wrap">
+                                <h4 class="title">Product name goes here</h4>
+                                <p class="desc">Some small description goes here</p>
+                                <div class="rating-wrap">
+                                    <div class="label-rating">132 reviews</div>
+                                    <div class="label-rating">154 orders </div>
+                                </div> <!-- rating-wrap.// -->
+                        </figcaption>
+                        <div class="bottom-wrap">
+                                <a href="" class="btn btn-sm btn-primary float-right">Order Now</a>	
+                                <div class="price-wrap h5">
+                                    <span class="price-new">$1280</span> <del class="price-old">$1980</del>
+                                </div> <!-- price-wrap.// -->
+                        </div> <!-- bottom-wrap.// -->
+                    </figure>
+                </div> <!-- col // -->
+                </div> <!-- row.// -->
+                
         <script src="/js/jquery.min.js"></script>
         <script src="/js/tether.min.js"></script>
+        <script src="/js/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
         <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/main.js"></script>
     </body>
 </html>

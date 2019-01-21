@@ -20,7 +20,7 @@ html,body {
 
 .header {
     display: table;
-    position: relative;
+    position: static;
     width: 100%;
     height: 100%;
     background-color: greenyellow;
@@ -33,3 +33,52 @@ html,body {
 .about {
     padding: 50px 0;
 }
+
+.shop{
+    position: relative;
+}
+.card{
+    max-width: 200px;
+}
+
+.dropdown-menu{
+      transform: translate3d(0px, 35px, 0px)!important;
+}
+  
+
+.card-product .img-wrap {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    position: relative;
+    height: 190px;
+    text-align: center;
+}
+.card-product .img-wrap img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.card-product .info-wrap {
+    overflow: hidden;
+    padding: 15px 15px 5px 15px;
+    border-top: 1px solid #eee;
+    text-align: center;
+    
+}
+.card-product .bottom-wrap {
+    padding: 15px 15px 5px 15px;
+    border-top: 1px solid #eee;
+}
+
+.label-rating { margin-right:10px;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.card-product .amount {
+    color: #999;
+}
+
+
