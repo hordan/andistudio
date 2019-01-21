@@ -1,0 +1,34 @@
+{
+    "cards": [
+        {
+            "imgsrc": "https://dummyimage.com/200x50/000/fff",
+            "title": "Shop Item1",
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et",
+            "footerText": "Last updated 3 mins ago"
+        },
+        {
+            "imgsrc": "https://dummyimage.com/200x50/000/fff",
+            "title": "Shop Item2",
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et",
+            "footerText": "Last updated 3 mins ago"
+        },
+        {
+            "imgsrc": "https://dummyimage.com/200x50/000/fff",
+            "title": "Shop Item3",
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et",
+            "footerText": "Last updated 3 mins ago"
+        },
+        {
+            "imgsrc": "https://dummyimage.com/200x50/000/fff",
+            "title": "Shop Item4",
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et",
+            "footerText": "Last updated 3 mins ago"
+        },
+        {
+            "imgsrc": "https://dummyimage.com/200x50/000/fff",
+            "title": "Shop Item5",
+            "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et",
+            "footerText": "Last updated 3 mins ago"
+        }
+    ]
+}
