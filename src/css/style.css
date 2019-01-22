@@ -3,6 +3,20 @@ html, body {
   height: 100%;
   margin: 0; }
 
+.stitched {
+  padding: 20px;
+  margin: 10px;
+  background: #ff0030;
+  color: #fff;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.3em;
+  border: 2px dashed #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 0 4px #ff0030, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+  text-shadow: -1px -1px #aa3030;
+  font-weight: normal; }
+
 .text-vertical-center {
   display: table-cell;
   text-align: center;
@@ -31,34 +45,49 @@ html, body {
 .shop {
   position: relative; }
 
-.card {
-  max-width: 200px; }
-
 .dropdown-menu {
   transform: translate3d(0px, 35px, 0px) !important; }
+
+.card-product {
+  border-radius: 20px; }
 
 .card-product .img-wrap {
   border-radius: 3px 3px 0 0;
   overflow: hidden;
   position: relative;
-  height: 190px;
+  height: inherit;
   text-align: center; }
 
 .card-product .img-wrap img {
   max-height: 100%;
   max-width: 100%;
   object-fit: cover;
-  border-radius: 10%; }
+  -webkit-border-top-left-radius: 20px;
+  -webkit-border-top-right-radius: 20px;
+  -moz-border-radius-topleft: 20px;
+  -moz-border-radius-topright: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; }
 
 .card-product .info-wrap {
+  width: 100%;
   overflow: hidden;
-  padding: 15px 15px 5px 15px;
-  border-top: 1px solid #eee;
+  padding: 15px 5px 5px 5px;
   text-align: center; }
 
 .card-product .bottom-wrap {
   padding: 15px 15px 5px 15px;
-  border-top: 1px solid #eee; }
+  border-top: 1px solid #eee;
+  background-color: rgba(0, 0, 0, 0.03); }
+
+.label-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 5px; }
 
 .label-rating {
   margin-right: 10px;
@@ -66,5 +95,21 @@ html, body {
   display: inline-block;
   vertical-align: middle; }
 
-.card-product .amount {
+.product-label {
+  font-size: 14px;
+  color: #333;
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 700; }
+
+.price-currency {
+  display: inline-block; }
+
+.price-amount {
+  font-size: 12px;
+  display: inline-block;
   color: #999; }
+
+@media only screen and (min-width: 576px) {
+  .product-label {
+    font-size: 12px; } }
