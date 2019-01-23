@@ -90,11 +90,10 @@ html,body {
     background-color: rgba(0, 0, 0, 0.03)
 }
 .badge{
-    margin-bottom: 5px;
+    margin: 5px;
 }
 
 .badge-list{
-    border: dashed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
