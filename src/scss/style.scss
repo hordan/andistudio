@@ -89,7 +89,19 @@ html,body {
     border-top: 1px solid #eee;
     background-color: rgba(0, 0, 0, 0.03)
 }
+.badge{
+    margin-bottom: 5px;
+}
 
+.badge-list{
+    border: dashed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.list-group-item {
+    padding: 0.5rem;
+}
 .label-wrap{
     display: flex;
     flex-direction: row;
