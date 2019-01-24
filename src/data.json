@@ -8,6 +8,96 @@
                     "Турция",
                     "Россия"
             ],
+            "colors": [
+                "Многоцветные",
+                "Одноцветные"
+            ],
+            "number": "14" ,
+            "description":"Anigaw b labo.",
+            "price": "128"
+        },
+        {
+            "imgsrc":  "images/fabric/velvet.jpg",
+            "title": "Атлас",
+            "contries": [
+                    "Китай"
+            ],
+            "colors": [
+                "Многоцветные",
+                "Одноцветные"
+            ],
+            "number": "8" ,
+            "description":"Anim pariatur cliche reprehenderit Food truck quinoa nesciulla assumendaunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.",
+            "price": "50"
+        },
+        {
+            "imgsrc":  "images/fabric/velvet.jpg",
+            "title": "Атлас",
+            "contries": [
+                    "Китай"
+            ],
+            "colors": [
+                "Многоцветные",
+                "Одноцветные"
+            ],
+            "number": "8" ,
+            "description":"Anim pariatur cliche reprehenderit Food truck quinoa nesciulla assumendaunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.",
+            "price": "50"
+        },
+        {
+            "imgsrc":  "images/fabric/velvet.jpg",
+            "title": "Бархат",
+            "contries": [
+                    "Китай",
+                    "Турция",
+                    "Россия"
+            ],
+            "colors":[
+                "Одноцветные",
+                "Многоцветные"
+            ],
+            "number": "14" ,
+            "description":"Anim pariatur cliche reprehenderit Food truck quinoa nesciulla assumendaunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.",
+            "price": "128"
+        },
+        {
+            "imgsrc":  "images/fabric/velvet.jpg",
+            "title": "Бархат",
+            "contries": [
+                    "Китай",
+                    "Турция",
+                    "Россия"
+            ],
+            "colors": [
+                "Многоцветные",
+                "Одноцветные"
+            ],
+            "number": "14" ,
+            "description":"Anigaw b labo.",
+            "price": "128"
+        },
+        {
+            "imgsrc":  "images/fabric/velvet.jpg",
+            "title": "Атлас",
+            "contries": [
+                    "Китай"
+            ],
+            "colors": [
+                "Многоцветные",
+                "Одноцветные"
+            ],
+            "number": "8" ,
+            "description":"Anim pariatur cliche reprehenderit Food truck quinoa nesciulla assumendaunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.",
+            "price": "50"
+        },
+        {
+            "imgsrc":  "images/fabric/velvet.jpg",
+            "title": "Бархат",
+            "contries": [
+                    "Китай",
+                    "Турция",
+                    "Россия"
+            ],
             "colors":[
                 "Одноцветные",
                 "Многоцветные"
