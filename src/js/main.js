@@ -4,18 +4,37 @@
    });
 
   var navlnks = document.querySelectorAll(".tab-pane fade show");
-// $.getJSON( "data.json", function( json ) {
-//     for(var i in json.fabrics){
-//         addCardNew(json.fabrics[i]);
-//     }
-//  });
 
+
+ $("#fabric").click(function() {
+    $(".card-columns").empty();
+    $.getJSON( "data.json", function( json ) {
+        for(var i in json.fabrics){
+            addCardNew(json.fabrics[i]);
+        }
+     });
+});
+$("#sewing").click(function() {
+    $(".card-columns").empty();
+    var i = 0 ; 
+    while(i < 10){
+        var $cardDiv = $("<div>", {class: "card"});
+        var $mainImg = $("<img>", {class: "card-img-top img-fluid"}).attr("src", "//placehold.it/800x600/555");
+        $cardDiv.append($mainImg);
+        $(".card-columns").append($cardDiv);
+        i++;
+    }
+  
+
+});
+$("#curtains").click(function() {
+    alert("Your anchor is clicked3");
+});
 
 //var $maibdiv = $("<div>", {class: "col-md-4 col-lg-4"});
 //$("body").append($maindiv);
 var num = 1 ;
 function addCardNew(dataItem){
-    var $mainDiv = $("<div>", {class: "col-md-4 col-lg-4"});
     var $mainFugure = $("<figure>", {class: "card card-product"});
     var $mainImgDiv = $("<div>", {class: "img-wrap"})
     var $mainImg = $("<img>", {class: "img-wrap"}).attr("src", dataItem.imgsrc);
@@ -33,7 +52,7 @@ function addCardNew(dataItem){
     }
     $listItem.append($badgeHeader).append($badgeList);
     var $listItem2 = $("<li>", {class: "list-group-item d-flex justify-content-between align-items-center"});
-    var $badgeHeader2 = $("<div>", {class: "badge-header"}).text("Производство");
+    var $badgeHeader2 = $("<div>", {class: "badge-header"}).text("Раскраски");
     var $badgeList2 = $("<div>", {class: "badge-list"});
     for(var i in dataItem.colors){ 
         var $badgeSpan = $("<span>", {class: "badge badge-primary badge-pill"}).text(dataItem.colors[i]);
@@ -41,11 +60,11 @@ function addCardNew(dataItem){
     }
     $listItem2.append($badgeHeader2).append($badgeList2);
     $mainList.append($listItem).append($listItem2);
-    var $butNumber = $("<button>", {class: "btn btn-success"}).text("Наименований в наличии");
+    var $butNumber = $("<button>", {class: "btn btn-success"}).text("Наименований в наличии").attr("style", "width: inherit;");
     var $butSpan = $("<span>", {class: "badge badge-light"}).text(dataItem.number);
     $butNumber.append($butSpan);
     var $accordDiv = $("<div>", {id: "accordion"});
-    var $cardDiv = $("<div>", {class: "card"});
+    var $cardDiv = $("<div>", {class: "card"}).attr("style", "margin-bottom: 0rem");
     var $cardHeader = $("<div>", {class: "card-header" , id: "heading" + num });
     var $cardText = $("<h5>", {class: "mb-0"});
     var $cardButton = $("<button>", {class: "btn btn-link"}).attr({
@@ -73,8 +92,8 @@ function addCardNew(dataItem){
     $accordDiv.append($cardDiv);
     $figCaption.append($figText).append($mainList);
     $mainFugure.append($mainImgDiv).append($figCaption).append($butNumber).append($accordDiv).append($bottomWrap);
-    $mainDiv.append($mainFugure);
-    $("#mainlist").append($mainDiv);
+    //$mainDiv.append($mainFugure);
+    $(".card-columns").append($mainFugure);
     num++;
 }
 

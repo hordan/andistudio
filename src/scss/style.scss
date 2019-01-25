@@ -60,6 +60,21 @@ html,body {
 .card-product {
     border-radius: 20px;
 }
+.card-columns {
+    @include media-breakpoint-only(xl) {
+      column-count: 6;
+    }
+    @include media-breakpoint-only(lg) {
+      column-count: 5;
+    }
+    @include media-breakpoint-only(md) {
+      column-count: 2;
+    }
+    @include media-breakpoint-only(sm) {
+      column-count: 2;
+    }
+  }
+ 
 .card-product .img-wrap {
     border-radius: 3px 3px 0 0;
     overflow: hidden;
@@ -89,6 +104,7 @@ html,body {
     border-top: 1px solid #eee;
     background-color: rgba(0, 0, 0, 0.03)
 }
+
 .badge{
     margin: 5px;
 }
@@ -139,3 +155,4 @@ html,body {
         font-size: 12px;
     }
   }
+  
